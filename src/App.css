@@ -1,0 +1,182 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app-container {
+  min-height: 100vh;
+  min-width: 100vw;
+}
+.top-section-container {
+  background-color: #3367d6;
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.app-logo {
+  height: 25px;
+  padding-left: 40px;
+}
+.search-input-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-right: 50px;
+}
+
+.search-image {
+  height: 35px;
+  background-color: #2850a7;
+  border: 1px solid #ececec;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-right: 1px;
+}
+
+.search-input {
+  height: 35px;
+  background-color: #2850a7;
+  border: 1px solid #ececec;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  outline: none;
+  color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .search-input {
+    width: 500px;
+  }
+}
+
+.bottom-section-container {
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #ffffff;
+}
+
+.bottom-section-history-container {
+  border-radius: 15px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 16px 0px #ececec;
+}
+.history-list-container {
+  display: flex;
+  flex-direction: column;
+}
+.history-item-container {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.title-container {
+  display: flex;
+  flex-direction: column;
+}
+.text-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .title-container {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.time {
+  font-family: 'Roboto';
+  font-size: 15px;
+  color: #64748b;
+  font-weight: bold;
+  margin-right: 50px;
+}
+.logo-title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+}
+
+@media screen and (min-width: 768px) {
+  .logo-title-container {
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+.domain-logo {
+  height: 30px;
+  margin-right: 15px;
+}
+.title {
+  font-family: 'Roboto';
+  font-size: 15px;
+  color: #475569;
+  font-weight: bold;
+  margin-right: 10px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .title {
+    margin-bottom: 15px;
+    text-align: start;
+  }
+}
+
+.domain-url {
+  font-family: 'Roboto';
+  font-size: 15px;
+  color: #64748b;
+  font-weight: 500;
+  margin-top: 0px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .domain-url {
+    margin-top: 15px;
+    text-align: start;
+  }
+}
+.delete-button {
+  border: none;
+  background-color: transparent;
+  margin-right: 40px;
+}
+.no-history {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto';
+  font-size: 25px;
+  color: #64748b;
+  font-weight: 500;
+}
